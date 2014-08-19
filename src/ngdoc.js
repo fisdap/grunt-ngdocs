@@ -959,14 +959,14 @@ function title(doc) {
     //    Foo is a directive in module ng
     return function () {
       this.tag('code', name);
-      this.tag('div', function () {
+      /* this.tag('div', function () {
         this.tag('span', {class: 'hint'}, function () {
           if (type && component) {
             this.text(type + ' in ' + componentType + ' ');
             this.tag('code', component);
           }
         });
-      });
+      }); */
     };
   };
 
